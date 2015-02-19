@@ -87,7 +87,7 @@ class tor{
 	}
 
 	function postraw($url, $fields){
-		$tor = $this->ip.':'.$this->port;
+		$tor = "socks5h://".$this->ip.':'.$this->port;
 		$useragent = "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.14912/870; U; id) Presto/2.4.15";
 
 		$ch = curl_init();
